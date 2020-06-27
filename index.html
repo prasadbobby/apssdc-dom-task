@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100vh;
+			font-family: 'Roboto', sans-serif;
+			color: #7A7575;
+			user-select: none;
+
+
+		}
+		.container{
+			display: flex;
+			justify-content: space-around;
+			padding: 10px;
+		}
+		.profile{
+			width: 30%;
+			height: 133.9vh;
+      		box-shadow: 0 3px 10px rgba(0,0,0,.3);
+			border-radius: 10px;
+		}
+		.profile .image{
+			width: 200px;
+			height: 200px;
+			margin-top: 20px;
+			margin-left: 80px;
+			box-shadow: 0 2px 6px rgba(0,0,0,.3);
+			border-radius: 50%;
+		}
+		.profile .image img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+
+		}
+
+		.profile .text{
+			font-size: 8px;
+			text-align: center;
+			color: #7A7575;
+			font-weight: 800;
+		}
+		.tech-skills{
+			margin: 20px;
+		}
+		.tech-skills .heading{
+			font-size: 8px;
+		}
+		.data {
+			margin-left: 30px;
+		}
+		.data ul{
+			line-height: 20px;
+			font-size: 8px;
+			font-weight: 800;
+			cursor: pointer;
+		}
+
+		.link:after{
+         content: '';
+         position: absolute;
+         display: block;
+         width: 0;
+         height: 2px;
+         transition: width .3s;
+         background: #00bfff;
+
+      }
+      .link:hover::after{
+         width: 5%;
+         transition: width .3s;
+      }
+      .link:hover{
+      	color: #000;
+      	text-decoration: none;
+      }
+      .content{
+      	width: 68%;
+      	height: 100%;
+      	border-radius: 10px;
+      	box-shadow: 0 3px 10px rgba(0,0,0,.3);
+      }
+      .career{
+      	margin: 20px;
+      }
+      #customers {
+		  border-collapse: collapse;
+		  width: 100%;
+		  border-radius: 10px;
+		}
+
+		#customers td, #customers th {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		  font-weight: 600;
+		  cursor: pointer;
+		}
+
+		#customers tr:nth-child(even){
+			background-color: #f2f2f2;
+
+		}
+
+		#customers tr:hover
+		{
+			background-color: #ddd;
+		}
+
+		#customers th {
+		  padding-top: 12px;
+		  padding-bottom: 12px;
+		  text-align: left;
+		  background-color: #040d10a1;
+		  color: white;
+		}
+		.projects{
+			margin: 20px;
+		}
+		.section-declare{
+			margin: 20px;
+		}
+		.dec{
+			padding: 0px;
+			margin: 0;
+			position: absolute;
+			bottom: -124px;
+			left:35.5%;
+			letter-spacing: 0.3px;
+			font-weight: 700;
+		}
+		
+		a{
+			text-decoration: none;
+			height: 15px;
+			margin: 30px;
+			margin-left: 10px;
+			padding: 12px 25px;
+			background: #ddd;
+			border-radius: 5px;
+			color: #7A7575;
+			float: right;
+			margin-top: 80px;
+			margin-left: 490px;
+			text-align: center;
+			cursor: not-allowed;
+		}
+		.checkbox:checked + .anchor{
+			background: #0779e4;
+			color: #fff;
+			cursor: pointer;
+		}
+		@media screen and  (max-width: 425px){
+			.career{
+				display: flex;
+			}
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="profile">
+		<div class="image">
+			<img src="https://i.imgur.com/QSKdWUj.jpg">
+		</div>
+		<div class="text">
+		<h1>K.N.V.Durga Prasad(Bobby)</h1>
+		<h1>199P5A0503.dnre@apssdc.info</h1>
+		<h1>9542109121</h1>
+		</div>
+		<hr>
+		<div class="tech-skills">
+			<div class="heading">
+				<h1>Technical Skills :</h1>
+			</div>
+			<div class="data">
+				<ul>
+					<h1><li class="link">Python</li></h1>
+					<h1><li class="link">HTML</li></h1>
+					<h1><li class="link">CSS</li></h1>
+					<h1><li class="link">jQuery</li></h1>
+					<h1><li class="link">Bootstrap</li></h1>
+				</ul>
+			</div>
+		</div>
+		<hr>
+
+		<div class="tech-skills">
+			<div class="heading">
+				<h1>Hobbies :</h1>
+			</div>
+			<div class="data">
+				<ol>
+					<h4><li>Listening music</li></h4>
+					<h4><li>Surfing Internet</li></h4>
+					<h4><li>Reading Books</li></h4>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="career">
+			<h4>Career Objective :</h4>
+			<p>A highly organized and hard-working individual looking for a responsible position to gain practical experience.</p>
+		</div>
+		<hr>
+		<div class="career">
+			<h4>Educational Details :</h4>
+			
+			<table id="customers">
+			  <tr>
+			    <th>Course</th>
+			    <th>Name of the Institution</th>
+			    <th>Year of Passing</th>
+			    <th>Percentage</th>
+			  </tr>
+			  <tr>
+			    <td>B.tech (C.S.E)</td>
+			    <td>DNR College of Engineering and Technology</td>
+			    <td>Pursuing</td>
+			    <td>--</td>
+			  </tr>
+			  <tr>
+			    <td>Diploma (C.M.E)</td>
+			    <td>Smt.B.Seetha Polytechnic College</td>
+			    <td>2019</td>
+			    <td>89</td>
+			  </tr>
+			  <tr>
+			    <td>S.S.C</td>
+			    <td>K.V.L.P.Z.P.H.School</td>
+			    <td>2016</td>
+			    <td>97</td>
+			  </tr>
+			  
+			</table>
+		</div>
+		<hr>
+		<div class="projects">
+			<div class="heading">
+				<h4>Certifications :</h4>
+			</div>
+			<div class="project-data">
+				<ul>
+					<h4><li>Red Hat Linux Adminstration Certification</li></h4>
+					<h4><li>AWS Cloud Practioner Certification from aws</li></h4>
+					<h4><li>AWS Certified Solution Architect Training Certification from Vinsys</li></h4>
+					<h4><li>Web Development using Django from Apssdc</li></h4>
+					<h4><li>AWS Cloud Training Certification from Apssdc</li></h4>
+					<h4><li>IT Essentials Certification from CISCO</li></h4>
+					<h4><li>Cyber Security Certification from CISCO</li></h4>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="section-declare">
+			<div class="heading">
+				<h4>Declaration :</h4>
+			</div>
+			<div class="declare">
+				<input type="checkbox" class="checkbox">
+ 					
+ 				<a href="#" class="anchor">SUBMIT</a>
+ 				<h5 class="dec"> I here by declare that all the information contained in this resume is in accordance with facts or truths to my knowledge.<br> I take full responsibility for the correctness of the said information.</h5>
+
+ 				</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
